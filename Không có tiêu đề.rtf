@@ -1,0 +1,982 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<title>Pre-Reading Vocabulary \'97 What Are Feathers For?</title>\
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">\
+<style>\
+:root \{\
+  --bg: #0f1117;\
+  --surface: #181c26;\
+  --surface2: #1f2435;\
+  --border: #2e3450;\
+  --accent: #e8a84c;\
+  --accent2: #6ecfb0;\
+  --accent3: #e86c6c;\
+  --text: #e8e4d8;\
+  --text-dim: #8a8fa8;\
+  --text-muted: #4a4f6a;\
+  --correct: #4caf82;\
+  --correct-bg: rgba(76,175,130,0.12);\
+  --wrong: #e86c6c;\
+  --wrong-bg: rgba(232,108,108,0.12);\
+  --gold: #e8a84c;\
+  --teal: #6ecfb0;\
+\}\
+\
+*, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\
+\
+body \{\
+  background: var(--bg);\
+  color: var(--text);\
+  font-family: 'Spectral', Georgia, serif;\
+  font-size: 16px;\
+  line-height: 1.7;\
+  min-height: 100vh;\
+\}\
+\
+/* \uc0\u9472 \u9472  ANIMATED BG \u9472 \u9472  */\
+body::before \{\
+  content: '';\
+  position: fixed;\
+  inset: 0;\
+  background:\
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(232,168,76,0.06) 0%, transparent 60%),\
+    radial-gradient(ellipse 50% 60% at 10% 80%, rgba(110,207,176,0.05) 0%, transparent 60%);\
+  pointer-events: none;\
+  z-index: 0;\
+\}\
+\
+/* \uc0\u9472 \u9472  HEADER \u9472 \u9472  */\
+header \{\
+  position: relative;\
+  z-index: 1;\
+  padding: 3rem 2rem 2.5rem;\
+  border-bottom: 1px solid var(--border);\
+  background: linear-gradient(180deg, rgba(232,168,76,0.06) 0%, transparent 100%);\
+  text-align: center;\
+\}\
+.feather-icon \{\
+  font-size: 3rem;\
+  display: block;\
+  margin-bottom: 0.8rem;\
+  animation: floatFeather 4s ease-in-out infinite;\
+\}\
+@keyframes floatFeather \{\
+  0%,100% \{ transform: translateY(0) rotate(-5deg); \}\
+  50% \{ transform: translateY(-8px) rotate(3deg); \}\
+\}\
+.header-meta \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.65rem;\
+  letter-spacing: 0.2em;\
+  text-transform: uppercase;\
+  color: var(--accent);\
+  margin-bottom: 0.6rem;\
+\}\
+header h1 \{\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: clamp(1.8rem, 5vw, 3rem);\
+  font-weight: 700;\
+  color: var(--text);\
+  line-height: 1.15;\
+\}\
+header h1 em \{\
+  font-style: italic;\
+  color: var(--accent);\
+\}\
+.header-sub \{\
+  margin-top: 0.5rem;\
+  font-size: 0.9rem;\
+  color: var(--text-dim);\
+\}\
+.level-tags \{\
+  margin-top: 1rem;\
+  display: flex;\
+  gap: 0.5rem;\
+  justify-content: center;\
+  flex-wrap: wrap;\
+\}\
+.ltag \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.62rem;\
+  letter-spacing: 0.12em;\
+  padding: 0.2rem 0.65rem;\
+  border-radius: 2px;\
+  text-transform: uppercase;\
+\}\
+.ltag-level \{ background: rgba(232,168,76,0.15); color: var(--accent); border: 1px solid rgba(232,168,76,0.3); \}\
+.ltag-focus \{ background: rgba(110,207,176,0.1); color: var(--teal); border: 1px solid rgba(110,207,176,0.25); \}\
+\
+/* \uc0\u9472 \u9472  MAIN LAYOUT \u9472 \u9472  */\
+main \{\
+  position: relative;\
+  z-index: 1;\
+  max-width: 900px;\
+  margin: 0 auto;\
+  padding: 2.5rem 1.5rem 5rem;\
+\}\
+\
+/* \uc0\u9472 \u9472  TASK BLOCK \u9472 \u9472  */\
+.task-block \{\
+  background: var(--surface);\
+  border: 1px solid var(--border);\
+  border-radius: 12px;\
+  margin-bottom: 2.5rem;\
+  overflow: hidden;\
+  animation: fadeUp 0.5s ease both;\
+\}\
+.task-block:nth-child(2) \{ animation-delay: 0.1s; \}\
+.task-block:nth-child(3) \{ animation-delay: 0.2s; \}\
+@keyframes fadeUp \{\
+  from \{ opacity: 0; transform: translateY(16px); \}\
+  to   \{ opacity: 1; transform: translateY(0); \}\
+\}\
+\
+.task-header \{\
+  display: flex;\
+  align-items: center;\
+  gap: 1rem;\
+  padding: 1.1rem 1.5rem;\
+  background: var(--surface2);\
+  border-bottom: 1px solid var(--border);\
+\}\
+.task-num \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.6rem;\
+  letter-spacing: 0.18em;\
+  text-transform: uppercase;\
+  color: var(--accent);\
+  background: rgba(232,168,76,0.12);\
+  border: 1px solid rgba(232,168,76,0.25);\
+  padding: 0.2rem 0.6rem;\
+  border-radius: 2px;\
+  white-space: nowrap;\
+\}\
+.task-title \{\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: 1.25rem;\
+  font-weight: 700;\
+  color: var(--text);\
+\}\
+.task-body \{ padding: 1.5rem; \}\
+\
+/* \uc0\u9472 \u9472  INSTRUCTION \u9472 \u9472  */\
+.instr \{\
+  font-size: 0.88rem;\
+  color: var(--text-dim);\
+  margin-bottom: 1.4rem;\
+  padding: 0.75rem 1rem;\
+  background: rgba(110,207,176,0.06);\
+  border-left: 3px solid var(--teal);\
+  border-radius: 0 6px 6px 0;\
+  font-style: italic;\
+\}\
+\
+/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+   TASK 1 \'97 MYSTERY MATCH\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */\
+.match-table \{\
+  width: 100%;\
+  border-collapse: separate;\
+  border-spacing: 0;\
+  margin-bottom: 1.4rem;\
+\}\
+.match-table th \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.62rem;\
+  letter-spacing: 0.14em;\
+  text-transform: uppercase;\
+  color: var(--text-muted);\
+  padding: 0.5rem 1rem;\
+  text-align: left;\
+  border-bottom: 1px solid var(--border);\
+\}\
+.match-table td \{ padding: 0.6rem 0.8rem; vertical-align: middle; \}\
+.match-table tr:not(:last-child) td \{ border-bottom: 1px solid rgba(46,52,80,0.5); \}\
+\
+.word-cell \{\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: 1.05rem;\
+  font-weight: 600;\
+  color: var(--accent);\
+  white-space: nowrap;\
+  width: 38%;\
+\}\
+.select-cell \{ width: 62%; \}\
+\
+.match-select \{\
+  width: 100%;\
+  background: var(--bg);\
+  border: 1px solid var(--border);\
+  border-radius: 5px;\
+  color: var(--text-dim);\
+  font-family: 'Spectral', serif;\
+  font-size: 0.88rem;\
+  padding: 0.45rem 0.75rem;\
+  cursor: pointer;\
+  outline: none;\
+  transition: border-color 0.2s, background 0.2s;\
+  appearance: none;\
+  -webkit-appearance: none;\
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234a4f6a'/%3E%3C/svg%3E");\
+  background-repeat: no-repeat;\
+  background-position: right 0.75rem center;\
+  padding-right: 2rem;\
+\}\
+.match-select:focus \{ border-color: var(--accent); \}\
+.match-select.correct \{ border-color: var(--correct); background-color: var(--correct-bg); color: var(--correct); \}\
+.match-select.wrong   \{ border-color: var(--wrong); background-color: var(--wrong-bg); color: var(--wrong); \}\
+\
+.feedback-icon \{\
+  display: inline-block;\
+  margin-left: 0.4rem;\
+  font-size: 0.9rem;\
+  vertical-align: middle;\
+  opacity: 0;\
+  transition: opacity 0.2s;\
+\}\
+.feedback-icon.show \{ opacity: 1; \}\
+\
+/* Extra challenge */\
+.extra-challenge \{\
+  margin-top: 1.2rem;\
+  padding: 1rem 1.1rem;\
+  background: var(--surface2);\
+  border: 1px dashed rgba(232,168,76,0.3);\
+  border-radius: 8px;\
+\}\
+.extra-label \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.6rem;\
+  letter-spacing: 0.18em;\
+  text-transform: uppercase;\
+  color: var(--accent);\
+  margin-bottom: 0.6rem;\
+\}\
+.extra-q \{ font-size: 0.9rem; color: var(--text-dim); margin-bottom: 0.8rem; \}\
+.checkbox-group \{ display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.8rem; \}\
+.check-label \{\
+  display: flex;\
+  align-items: center;\
+  gap: 0.4rem;\
+  cursor: pointer;\
+  font-size: 0.9rem;\
+  color: var(--text);\
+  background: var(--bg);\
+  border: 1px solid var(--border);\
+  border-radius: 5px;\
+  padding: 0.35rem 0.75rem;\
+  transition: all 0.18s;\
+  user-select: none;\
+\}\
+.check-label:hover \{ border-color: var(--accent); color: var(--accent); \}\
+.check-label input \{ display: none; \}\
+.check-label.chosen \{ border-color: var(--accent); background: rgba(232,168,76,0.1); color: var(--accent); \}\
+.check-label.correct-choice \{ border-color: var(--correct); background: var(--correct-bg); color: var(--correct); \}\
+.check-label.wrong-choice \{ border-color: var(--wrong); background: var(--wrong-bg); color: var(--wrong); \}\
+#extraFeedback \{ font-size: 0.85rem; margin-top: 0.4rem; min-height: 1.2em; \}\
+\
+/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+   TASK 2 \'97 DRAG & DROP CATEGORIES\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */\
+.word-pool \{\
+  display: flex;\
+  flex-wrap: wrap;\
+  gap: 0.5rem;\
+  margin-bottom: 1.4rem;\
+  min-height: 48px;\
+  padding: 0.7rem;\
+  background: var(--bg);\
+  border: 1px dashed var(--border);\
+  border-radius: 8px;\
+\}\
+.drag-chip \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.75rem;\
+  letter-spacing: 0.04em;\
+  background: var(--surface2);\
+  border: 1px solid var(--border);\
+  border-radius: 4px;\
+  padding: 0.3rem 0.75rem;\
+  cursor: grab;\
+  transition: all 0.18s;\
+  user-select: none;\
+  color: var(--text);\
+  white-space: nowrap;\
+\}\
+.drag-chip:hover \{ border-color: var(--accent); color: var(--accent); transform: translateY(-1px); \}\
+.drag-chip.dragging \{ opacity: 0.4; \}\
+.drag-chip.placed-correct \{ border-color: var(--correct); color: var(--correct); background: var(--correct-bg); cursor: default; \}\
+.drag-chip.placed-wrong   \{ border-color: var(--wrong); color: var(--wrong); background: var(--wrong-bg); \}\
+\
+.cat-grid \{\
+  display: grid;\
+  grid-template-columns: 1fr 1fr;\
+  gap: 1rem;\
+  margin-bottom: 1.2rem;\
+\}\
+@media (max-width: 560px) \{ .cat-grid \{ grid-template-columns: 1fr; \} \}\
+\
+.cat-zone \{\
+  border-radius: 8px;\
+  overflow: hidden;\
+  border: 1px solid var(--border);\
+\}\
+.cat-head \{\
+  padding: 0.6rem 1rem;\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: 1rem;\
+  font-weight: 700;\
+\}\
+.cat-head.physical \{ background: rgba(232,168,76,0.12); color: var(--accent); border-bottom: 2px solid var(--accent); \}\
+.cat-head.behavioral \{ background: rgba(110,207,176,0.1); color: var(--teal); border-bottom: 2px solid var(--teal); \}\
+\
+.drop-zone \{\
+  min-height: 110px;\
+  padding: 0.7rem;\
+  display: flex;\
+  flex-wrap: wrap;\
+  gap: 0.5rem;\
+  align-content: flex-start;\
+  background: var(--bg);\
+  transition: background 0.18s;\
+\}\
+.drop-zone.drag-over \{ background: rgba(232,168,76,0.07); \}\
+\
+/* \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+   TASK 3 \'97 COLLOCATION FILL\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  */\
+.word-bank \{\
+  display: flex;\
+  flex-wrap: wrap;\
+  gap: 0.45rem;\
+  padding: 0.8rem 1rem;\
+  background: var(--bg);\
+  border: 1px dashed rgba(110,207,176,0.3);\
+  border-radius: 7px;\
+  margin-bottom: 1.4rem;\
+\}\
+.wb-chip \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.7rem;\
+  letter-spacing: 0.06em;\
+  background: rgba(110,207,176,0.08);\
+  border: 1px solid rgba(110,207,176,0.25);\
+  color: var(--teal);\
+  padding: 0.22rem 0.6rem;\
+  border-radius: 3px;\
+  cursor: pointer;\
+  transition: all 0.15s;\
+  user-select: none;\
+\}\
+.wb-chip:hover \{ background: rgba(110,207,176,0.18); border-color: var(--teal); \}\
+.wb-chip.used \{ opacity: 0.3; text-decoration: line-through; pointer-events: none; \}\
+\
+.colloc-list \{\
+  display: flex;\
+  flex-direction: column;\
+  gap: 0.7rem;\
+  margin-bottom: 1.3rem;\
+\}\
+.colloc-row \{\
+  display: flex;\
+  align-items: center;\
+  gap: 0.6rem;\
+  background: var(--bg);\
+  border: 1px solid var(--border);\
+  border-radius: 7px;\
+  padding: 0.7rem 1rem;\
+  transition: border-color 0.2s;\
+\}\
+.colloc-row:focus-within \{ border-color: rgba(232,168,76,0.4); \}\
+.colloc-row.correct \{ border-color: var(--correct); background: var(--correct-bg); \}\
+.colloc-row.wrong   \{ border-color: var(--wrong); background: var(--wrong-bg); \}\
+\
+.row-num \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.62rem;\
+  color: var(--text-muted);\
+  min-width: 1.2rem;\
+\}\
+.colloc-stem \{\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: 1.05rem;\
+  font-weight: 600;\
+  color: var(--text);\
+  white-space: nowrap;\
+\}\
+.colloc-input \{\
+  border: none;\
+  border-bottom: 1.5px solid var(--border);\
+  background: transparent;\
+  font-family: 'Cormorant Garamond', serif;\
+  font-size: 1.05rem;\
+  font-weight: 600;\
+  color: var(--accent);\
+  outline: none;\
+  padding: 0 0.3rem;\
+  min-width: 100px;\
+  flex: 1;\
+  transition: border-color 0.18s;\
+\}\
+.colloc-input:focus \{ border-bottom-color: var(--accent); \}\
+.colloc-input.correct \{ color: var(--correct); border-bottom-color: var(--correct); \}\
+.colloc-input.wrong   \{ color: var(--wrong);   border-bottom-color: var(--wrong); \}\
+\
+.row-fb \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.65rem;\
+  opacity: 0;\
+  transition: opacity 0.2s;\
+  white-space: nowrap;\
+\}\
+.row-fb.show \{ opacity: 1; \}\
+.row-fb.ok \{ color: var(--correct); \}\
+.row-fb.no \{ color: var(--wrong); \}\
+\
+/* \uc0\u9472 \u9472  BUTTONS \u9472 \u9472  */\
+.btn-row \{\
+  display: flex;\
+  gap: 0.75rem;\
+  flex-wrap: wrap;\
+  margin-top: 0.5rem;\
+\}\
+.btn-check \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.68rem;\
+  letter-spacing: 0.12em;\
+  text-transform: uppercase;\
+  background: var(--accent);\
+  color: #0f1117;\
+  border: none;\
+  border-radius: 5px;\
+  padding: 0.6rem 1.5rem;\
+  cursor: pointer;\
+  transition: all 0.18s;\
+  font-weight: 500;\
+\}\
+.btn-check:hover \{ background: #f0c06a; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232,168,76,0.25); \}\
+.btn-reset \{\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.68rem;\
+  letter-spacing: 0.1em;\
+  text-transform: uppercase;\
+  background: transparent;\
+  color: var(--text-dim);\
+  border: 1px solid var(--border);\
+  border-radius: 5px;\
+  padding: 0.6rem 1.2rem;\
+  cursor: pointer;\
+  transition: all 0.18s;\
+\}\
+.btn-reset:hover \{ border-color: var(--text-dim); color: var(--text); \}\
+\
+.score-pill \{\
+  display: inline-flex;\
+  align-items: center;\
+  gap: 0.4rem;\
+  font-family: 'DM Mono', monospace;\
+  font-size: 0.72rem;\
+  background: var(--surface2);\
+  border: 1px solid var(--border);\
+  border-radius: 20px;\
+  padding: 0.35rem 0.9rem;\
+  color: var(--text-dim);\
+  margin-top: 0.8rem;\
+\}\
+.score-pill .s-num \{ color: var(--accent); font-weight: 500; \}\
+\
+/* \uc0\u9472 \u9472  TASK 2 NOTE \u9472 \u9472  */\
+.note-2 \{\
+  font-size: 0.8rem;\
+  color: var(--text-muted);\
+  font-style: italic;\
+  margin-top: 0.4rem;\
+\}\
+</style>\
+</head>\
+<body>\
+\
+<header>\
+  <span class="feather-icon">\uc0\u55358 \u57014 </span>\
+  <div class="header-meta">Pre-Reading Vocabulary Tasks</div>\
+  <h1><em>What Are Feathers For?</em></h1>\
+  <p class="header-sub">adaptation \'b7 evolution \'b7 feathers \'b7 survival</p>\
+  <div class="level-tags">\
+    <span class="ltag ltag-level">B1 \'96 C1</span>\
+    <span class="ltag ltag-focus">3 Tasks</span>\
+    <span class="ltag ltag-focus">Check Answers</span>\
+  </div>\
+</header>\
+\
+<main>\
+\
+<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+     TASK 1 \'97 MYSTERY MATCH\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->\
+<div class="task-block">\
+  <div class="task-header">\
+    <span class="task-num">Task 1</span>\
+    <span class="task-title">Mystery Match</span>\
+  </div>\
+  <div class="task-body">\
+    <div class="instr">Match the word with the correct meaning by selecting from the dropdown menus.</div>\
+\
+    <table class="match-table">\
+      <thead>\
+        <tr>\
+          <th>Word</th>\
+          <th>Meaning</th>\
+        </tr>\
+      </thead>\
+      <tbody id="matchRows"></tbody>\
+    </table>\
+\
+    <div class="btn-row">\
+      <button class="btn-check" onclick="checkTask1()">\uc0\u10003  Check Answers</button>\
+      <button class="btn-reset" onclick="resetTask1()">\uc0\u8634  Reset</button>\
+    </div>\
+    <div id="task1Score"></div>\
+\
+    <!-- Extra Challenge -->\
+    <div class="extra-challenge" style="margin-top:1.4rem;">\
+      <div class="extra-label">\uc0\u11088  Extra Challenge</div>\
+      <div class="extra-q">Which TWO words are most connected to <strong>survival</strong>?</div>\
+      <div class="checkbox-group" id="extraBoxes"></div>\
+      <div class="btn-row">\
+        <button class="btn-check" onclick="checkExtra()">\uc0\u10003  Check</button>\
+        <button class="btn-reset" onclick="resetExtra()">\uc0\u8634  Reset</button>\
+      </div>\
+      <div id="extraFeedback"></div>\
+    </div>\
+  </div>\
+</div>\
+\
+<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+     TASK 2 \'97 SURVIVAL CATEGORIES\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->\
+<div class="task-block">\
+  <div class="task-header">\
+    <span class="task-num">Task 2</span>\
+    <span class="task-title">Survival Categories</span>\
+  </div>\
+  <div class="task-body">\
+    <div class="instr">Drag each word into the correct category below. Some words are trickier than they look!</div>\
+\
+    <div class="word-pool" id="wordPool"></div>\
+\
+    <div class="cat-grid">\
+      <div class="cat-zone">\
+        <div class="cat-head physical">\uc0\u55358 \u56756  Physical Adaptation</div>\
+        <div class="drop-zone" id="dropPhysical" data-cat="physical"></div>\
+      </div>\
+      <div class="cat-zone">\
+        <div class="cat-head behavioral">\uc0\u55358 \u56800  Behavioral Adaptation</div>\
+        <div class="drop-zone" id="dropBehavioral" data-cat="behavioral"></div>\
+      </div>\
+    </div>\
+\
+    <div class="btn-row">\
+      <button class="btn-check" onclick="checkTask2()">\uc0\u10003  Check Answers</button>\
+      <button class="btn-reset" onclick="resetTask2()">\uc0\u8634  Reset</button>\
+    </div>\
+    <div id="task2Score"></div>\
+    <p class="note-2">\uc0\u55357 \u56481  Tip: "feathers" and "flexible wings" are physical features of the body. "migration" and "attract mates" are things an animal <em>does</em>.</p>\
+  </div>\
+</div>\
+\
+<!-- \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+     TASK 3 \'97 SCIENTIFIC COLLOCATIONS\
+\uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552  -->\
+<div class="task-block">\
+  <div class="task-header">\
+    <span class="task-num">Task 3</span>\
+    <span class="task-title">Complete the Scientific Collocations</span>\
+  </div>\
+  <div class="task-body">\
+    <div class="instr">Fill in the blank to complete each scientific collocation. Click a word from the bank to auto-fill, or type directly.</div>\
+\
+    <div class="word-bank" id="wordBank3"></div>\
+    <div class="colloc-list" id="collocList"></div>\
+\
+    <div class="btn-row">\
+      <button class="btn-check" onclick="checkTask3()">\uc0\u10003  Check Answers</button>\
+      <button class="btn-reset" onclick="resetTask3()">\uc0\u8634  Reset</button>\
+    </div>\
+    <div id="task3Score"></div>\
+  </div>\
+</div>\
+\
+</main>\
+\
+<script>\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// DATA\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+\
+/* Task 1 */\
+const matchWords = [\
+  \{ num:1, word: 'evolve',          answer: 'b', meaning: 'b. to change gradually over time' \},\
+  \{ num:2, word: 'attract a mate',  answer: 'd', meaning: 'd. to make another animal interested in reproduction' \},\
+  \{ num:3, word: 'migration',       answer: 'a', meaning: 'a. to move from one place to another seasonally' \},\
+  \{ num:4, word: 'fossil evidence', answer: 'c', meaning: 'c. evidence from ancient remains' \},\
+  \{ num:5, word: 'insulation',      answer: 'e', meaning: 'e. protection against heat or cold' \},\
+];\
+const allMeanings = [\
+  \{ val:'a', text:'a. to move from one place to another seasonally' \},\
+  \{ val:'b', text:'b. to change gradually over time' \},\
+  \{ val:'c', text:'c. evidence from ancient remains' \},\
+  \{ val:'d', text:'d. to make another animal interested in reproduction' \},\
+  \{ val:'e', text:'e. protection against heat or cold' \},\
+];\
+const extraCorrect = ['insulation', 'migration'];\
+\
+/* Task 2 */\
+const catWords = [\
+  \{ label:'camouflage',         cat:'physical' \},\
+  \{ label:'feathers',           cat:'physical' \},\
+  \{ label:'migration',          cat:'behavioral' \},\
+  \{ label:'thick fur',          cat:'physical' \},\
+  \{ label:'attract mates',      cat:'behavioral' \},\
+  \{ label:'flexible wings',     cat:'physical' \},\
+  \{ label:'body temperature',   cat:'physical' \},\
+  \{ label:'behavioral adaptation', cat:'behavioral' \},\
+  \{ label:'physical adaptation',   cat:'physical' \},\
+  \{ label:'survive in the environment', cat:'both' \}, // intentional discussion word\
+];\
+// "survive in the environment" \uc0\u8594  accept either; we'll mark it as a discussion word\
+const catAnswers = \{\
+  physical:  ['camouflage','feathers','thick fur','flexible wings','body temperature','physical adaptation'],\
+  behavioral:['migration','attract mates','behavioral adaptation'],\
+\};\
+\
+/* Task 3 */\
+const collocData = [\
+  \{ stem:'fossil',    blank:'__________', answer:'evidence',    full:'fossil evidence' \},\
+  \{ stem:'natural',   blank:'__________', answer:'selection',   full:'natural selection' \},\
+  \{ stem:'genetic',   blank:'__________', answer:'mutation',    full:'genetic mutation' \},\
+  \{ stem:'attract a', blank:'__________', answer:'mate',        full:'attract a mate' \},\
+  \{ stem:'body',      blank:'__________', answer:'temperature', full:'body temperature' \},\
+  \{ stem:'evolve',    blank:'__________ time', answer:'over',   full:'evolve over time' \},\
+  \{ stem:'air',       blank:'__________', answer:'pressure',    full:'air pressure' \},\
+  \{ stem:'common',    blank:'__________', answer:'characteristic', full:'common characteristic' \},\
+  \{ stem:'behavioral',blank:'__________', answer:'adaptation',  full:'behavioral adaptation' \},\
+  \{ stem:'reduce',    blank:'__________', answer:'drag',        full:'reduce drag' \},\
+];\
+const bankWords3 = ['pressure','mutation','mate','adaptation','evidence','drag','selection','characteristic','over','temperature'];\
+\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// BUILD TASK 1\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+function buildTask1() \{\
+  const tbody = document.getElementById('matchRows');\
+  tbody.innerHTML = '';\
+  matchWords.forEach(item => \{\
+    const tr = document.createElement('tr');\
+    const shuffled = [...allMeanings].sort(() => Math.random()-0.5);\
+    const opts = `<option value="">\'97 select meaning \'97</option>` +\
+      shuffled.map(m => `<option value="$\{m.val\}">$\{m.text\}</option>`).join('');\
+    tr.innerHTML = `\
+      <td class="word-cell">$\{item.num\}. $\{item.word\}</td>\
+      <td class="select-cell">\
+        <select class="match-select" data-answer="$\{item.answer\}" data-word="$\{item.word\}">$\{opts\}</select>\
+        <span class="feedback-icon" id="fb1-$\{item.num\}"></span>\
+      </td>`;\
+    tbody.appendChild(tr);\
+  \});\
+\}\
+function checkTask1() \{\
+  const selects = document.querySelectorAll('.match-select');\
+  let score = 0;\
+  selects.forEach((s,i) => \{\
+    const correct = s.value === s.dataset.answer;\
+    s.classList.toggle('correct', correct && s.value !== '');\
+    s.classList.toggle('wrong', !correct && s.value !== '');\
+    const fb = document.getElementById(`fb1-$\{i+1\}`);\
+    if (s.value !== '') \{\
+      fb.textContent = correct ? '\uc0\u10003 ' : '\u10007 ';\
+      fb.classList.toggle('show', true);\
+      if (correct) score++;\
+    \}\
+  \});\
+  showScore('task1Score', score, selects.length);\
+\}\
+function resetTask1() \{\
+  document.querySelectorAll('.match-select').forEach(s => \{\
+    s.value = '';\
+    s.className = 'match-select';\
+  \});\
+  document.querySelectorAll('.feedback-icon').forEach(f => \{ f.textContent=''; f.classList.remove('show'); \});\
+  document.getElementById('task1Score').innerHTML = '';\
+\}\
+\
+/* Extra challenge */\
+function buildExtra() \{\
+  const container = document.getElementById('extraBoxes');\
+  matchWords.forEach(item => \{\
+    const label = document.createElement('label');\
+    label.className = 'check-label';\
+    label.innerHTML = `<input type="checkbox" value="$\{item.word\}"> $\{item.word\}`;\
+    label.querySelector('input').addEventListener('change', () => label.classList.toggle('chosen', label.querySelector('input').checked));\
+    container.appendChild(label);\
+  \});\
+\}\
+function checkExtra() \{\
+  const labels = document.querySelectorAll('.check-label');\
+  const chosen = [...labels].filter(l => l.querySelector('input').checked).map(l => l.querySelector('input').value);\
+  labels.forEach(l => \{\
+    const val = l.querySelector('input').value;\
+    const isChosen = l.querySelector('input').checked;\
+    const isCorrect = extraCorrect.includes(val);\
+    l.classList.remove('chosen','correct-choice','wrong-choice');\
+    if (isChosen && isCorrect) l.classList.add('correct-choice');\
+    else if (isChosen && !isCorrect) l.classList.add('wrong-choice');\
+  \});\
+  const correctChosen = chosen.filter(c => extraCorrect.includes(c)).length;\
+  const wrongChosen   = chosen.filter(c => !extraCorrect.includes(c)).length;\
+  const fb = document.getElementById('extraFeedback');\
+  if (correctChosen === 2 && wrongChosen === 0) \{\
+    fb.innerHTML = `<span style="color:var(--correct)">\uc0\u10003  Correct! <em>Insulation</em> and <em>migration</em> are most directly linked to survival.</span>`;\
+  \} else \{\
+    fb.innerHTML = `<span style="color:var(--wrong)">Not quite. Think about which words help animals <em>stay alive</em> \'97 keeping warm vs. finding food/seasons.</span>`;\
+  \}\
+\}\
+function resetExtra() \{\
+  document.querySelectorAll('.check-label').forEach(l => \{\
+    l.querySelector('input').checked = false;\
+    l.className = 'check-label';\
+  \});\
+  document.getElementById('extraFeedback').innerHTML = '';\
+\}\
+\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// BUILD TASK 2 \'97 DRAG & DROP\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+let draggedChip = null;\
+\
+function buildTask2() \{\
+  const pool = document.getElementById('wordPool');\
+  pool.innerHTML = '';\
+  catWords.sort(() => Math.random()-0.5).forEach(w => \{\
+    const chip = createChip(w.label);\
+    pool.appendChild(chip);\
+  \});\
+  setupDropZones();\
+\}\
+\
+function createChip(label) \{\
+  const chip = document.createElement('div');\
+  chip.className = 'drag-chip';\
+  chip.draggable = true;\
+  chip.textContent = label;\
+  chip.dataset.label = label;\
+  chip.addEventListener('dragstart', e => \{\
+    draggedChip = chip;\
+    chip.classList.add('dragging');\
+    e.dataTransfer.effectAllowed = 'move';\
+  \});\
+  chip.addEventListener('dragend', () => chip.classList.remove('dragging'));\
+  // Touch support\
+  chip.addEventListener('touchstart', touchStart, \{passive:true\});\
+  chip.addEventListener('touchmove', touchMove, \{passive:false\});\
+  chip.addEventListener('touchend', touchEnd);\
+  return chip;\
+\}\
+\
+function setupDropZones() \{\
+  ['dropPhysical','dropBehavioral','wordPool'].forEach(id => \{\
+    const zone = document.getElementById(id);\
+    zone.addEventListener('dragover', e => \{ e.preventDefault(); zone.classList.add('drag-over'); \});\
+    zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));\
+    zone.addEventListener('drop', e => \{\
+      e.preventDefault();\
+      zone.classList.remove('drag-over');\
+      if (draggedChip) \{\
+        // reset chip state\
+        draggedChip.classList.remove('placed-correct','placed-wrong');\
+        zone.appendChild(draggedChip);\
+        draggedChip = null;\
+      \}\
+    \});\
+  \});\
+\}\
+\
+// Touch drag (mobile)\
+let touchChip = null, touchClone = null;\
+function touchStart(e) \{\
+  touchChip = e.currentTarget;\
+  touchClone = touchChip.cloneNode(true);\
+  touchClone.style.cssText = 'position:fixed;z-index:9999;opacity:0.85;pointer-events:none;';\
+  document.body.appendChild(touchClone);\
+\}\
+function touchMove(e) \{\
+  e.preventDefault();\
+  const t = e.touches[0];\
+  if (touchClone) \{\
+    touchClone.style.left = (t.clientX - 40) + 'px';\
+    touchClone.style.top  = (t.clientY - 16) + 'px';\
+  \}\
+\}\
+function touchEnd(e) \{\
+  if (touchClone) \{ document.body.removeChild(touchClone); touchClone = null; \}\
+  const t = e.changedTouches[0];\
+  const el = document.elementFromPoint(t.clientX, t.clientY);\
+  const zone = el ? el.closest('.drop-zone, #wordPool') : null;\
+  if (zone && touchChip) \{\
+    touchChip.classList.remove('placed-correct','placed-wrong');\
+    zone.appendChild(touchChip);\
+  \}\
+  touchChip = null;\
+\}\
+\
+function checkTask2() \{\
+  const physZone = document.getElementById('dropPhysical');\
+  const behZone  = document.getElementById('dropBehavioral');\
+  let score = 0, total = 0;\
+\
+  [...physZone.children].forEach(chip => \{\
+    const label = chip.dataset.label;\
+    const correct = catAnswers.physical.includes(label) || label === 'survive in the environment';\
+    chip.classList.toggle('placed-correct', correct);\
+    chip.classList.toggle('placed-wrong', !correct);\
+    if (catAnswers.physical.includes(label)) \{ score++; \}\
+    total++;\
+  \});\
+  [...behZone.children].forEach(chip => \{\
+    const label = chip.dataset.label;\
+    const correct = catAnswers.behavioral.includes(label) || label === 'survive in the environment';\
+    chip.classList.toggle('placed-correct', correct);\
+    chip.classList.toggle('placed-wrong', !correct);\
+    if (catAnswers.behavioral.includes(label)) \{ score++; \}\
+    total++;\
+  \});\
+  const scoreDiv = document.getElementById('task2Score');\
+  scoreDiv.innerHTML = `<div class="score-pill">Score: <span class="s-num">$\{score\} / $\{catWords.length - 1\}</span> &nbsp;\'b7&nbsp; <em style="font-size:0.62rem;color:var(--text-muted)">"survive in the environment" can fit either category \'97 discuss!</em></div>`;\
+\}\
+\
+function resetTask2() \{\
+  const pool = document.getElementById('wordPool');\
+  ['dropPhysical','dropBehavioral'].forEach(id => \{\
+    document.getElementById(id).querySelectorAll('.drag-chip').forEach(c => \{\
+      c.classList.remove('placed-correct','placed-wrong');\
+      pool.appendChild(c);\
+    \});\
+  \});\
+  document.getElementById('task2Score').innerHTML = '';\
+\}\
+\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// BUILD TASK 3 \'97 COLLOCATIONS\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+let selectedBank = null;\
+\
+function buildTask3() \{\
+  // Word bank\
+  const bank = document.getElementById('wordBank3');\
+  bank.innerHTML = '';\
+  bankWords3.forEach(w => \{\
+    const chip = document.createElement('span');\
+    chip.className = 'wb-chip';\
+    chip.textContent = w;\
+    chip.dataset.word = w;\
+    chip.addEventListener('click', () => \{\
+      if (chip.classList.contains('used')) return;\
+      if (!selectedBank) \{\
+        selectedBank = chip;\
+        chip.style.outline = '2px solid var(--accent)';\
+      \} else if (selectedBank === chip) \{\
+        selectedBank = null;\
+        chip.style.outline = '';\
+      \} else \{\
+        selectedBank.style.outline = '';\
+        selectedBank = chip;\
+        chip.style.outline = '2px solid var(--accent)';\
+      \}\
+    \});\
+    bank.appendChild(chip);\
+  \});\
+\
+  // Collocation rows\
+  const list = document.getElementById('collocList');\
+  list.innerHTML = '';\
+  collocData.forEach((item, i) => \{\
+    const row = document.createElement('div');\
+    row.className = 'colloc-row';\
+    const inputId = `ci-$\{i\}`;\
+    row.innerHTML = `\
+      <span class="row-num">$\{i+1\}.</span>\
+      <span class="colloc-stem">$\{item.stem\}</span>\
+      <input class="colloc-input" id="$\{inputId\}" type="text" placeholder="___" data-answer="$\{item.answer\}" autocomplete="off" spellcheck="false">\
+      $\{item.answer==='over' ? `<span style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--text-dim)">time</span>` : ''\}\
+      <span class="row-fb" id="rfb-$\{i\}"></span>`;\
+    // Click to fill from bank\
+    row.addEventListener('click', () => \{\
+      const input = document.getElementById(inputId);\
+      if (selectedBank && !input.value) \{\
+        input.value = selectedBank.dataset.word;\
+        selectedBank.classList.add('used');\
+        selectedBank.style.outline = '';\
+        selectedBank = null;\
+      \}\
+    \});\
+    list.appendChild(row);\
+  \});\
+\}\
+\
+function checkTask3() \{\
+  const inputs = document.querySelectorAll('.colloc-input');\
+  let score = 0;\
+  inputs.forEach((inp, i) => \{\
+    const correct = inp.value.trim().toLowerCase() === inp.dataset.answer.toLowerCase();\
+    inp.classList.toggle('correct', correct && inp.value.trim() !== '');\
+    inp.classList.toggle('wrong', !correct && inp.value.trim() !== '');\
+    const fb = document.getElementById(`rfb-$\{i\}`);\
+    if (inp.value.trim()) \{\
+      fb.textContent = correct ? '\uc0\u10003 ' : `\u10007  \u8594  $\{inp.dataset.answer\}`;\
+      fb.className = 'row-fb show ' + (correct ? 'ok' : 'no');\
+      if (correct) score++;\
+    \}\
+  \});\
+  showScore('task3Score', score, inputs.length);\
+\}\
+\
+function resetTask3() \{\
+  document.querySelectorAll('.colloc-input').forEach(inp => \{\
+    inp.value = '';\
+    inp.className = 'colloc-input';\
+  \});\
+  document.querySelectorAll('.row-fb').forEach(fb => \{ fb.textContent=''; fb.className='row-fb'; \});\
+  document.querySelectorAll('.wb-chip').forEach(c => \{ c.classList.remove('used'); c.style.outline=''; \});\
+  document.getElementById('task3Score').innerHTML = '';\
+  selectedBank = null;\
+\}\
+\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// HELPERS\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+function showScore(elId, score, total) \{\
+  const el = document.getElementById(elId);\
+  const pct = Math.round(score/total*100);\
+  const color = pct === 100 ? 'var(--correct)' : pct >= 60 ? 'var(--accent)' : 'var(--wrong)';\
+  el.innerHTML = `<div class="score-pill">Score: <span class="s-num" style="color:$\{color\}">$\{score\} / $\{total\}</span> &nbsp;($\{pct\}%)</div>`;\
+\}\
+\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+// INIT\
+// \uc0\u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \
+buildTask1();\
+buildExtra();\
+buildTask2();\
+buildTask3();\
+</script>\
+</body>\
+</html>}
